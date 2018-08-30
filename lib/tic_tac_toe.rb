@@ -55,5 +55,9 @@ class TicTacToe
       item != " "
     end
   end
+  def draw?
+     full? && !won? ? true 
+      
+  end
 
 end
