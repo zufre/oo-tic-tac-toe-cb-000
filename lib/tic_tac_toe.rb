@@ -69,6 +69,6 @@ class TicTacToe
       turn
       end
       puts "Congratulation! The winner is #{winner}"
-    
+
   end
 end
