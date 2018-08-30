@@ -68,7 +68,7 @@ class TicTacToe
     until over?
       turn
     end
-    winner ? puts "Congratulations #{winner}!" : "Cat's Gam"
+    puts winner ?  "Congratulations #{winner}!" : "Cat's Gam"
 
   end
 end
