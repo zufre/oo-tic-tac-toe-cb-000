@@ -61,7 +61,7 @@ class TicTacToe
   def over?
     draw? || won?
   end
-  def winner?
+  def winner
     token = won?[0]
     token == "X" ? "X" : "O"
   end
