@@ -45,7 +45,7 @@ class TicTacToe
   end
   def won?
     WIN_COMBINATIONS.any? do |arr|
-      if @board[arr[0]] == @board[arr[1]] && @board[arr[1]] == @board[arr[2]] && @board[arr[0]] != " "
+      if @board[arr[0]] == @board[arr[1]] && @board[arr[1]] == @board[arr[2]] && position_taken?
         arr
       end
     end
