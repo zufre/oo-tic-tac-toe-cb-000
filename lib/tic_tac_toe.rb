@@ -50,6 +50,5 @@ class TicTacToe
       @board[arr[0]] != " "
       arr
     end
-    end  
   end
 end
