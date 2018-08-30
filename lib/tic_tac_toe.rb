@@ -32,7 +32,7 @@ class TicTacToe
     count = 9
     @board.each do |item|
       if item == " "
-        count--
+        count -= 1
       end
     end
     count
