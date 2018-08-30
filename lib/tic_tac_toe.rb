@@ -28,10 +28,13 @@ class TicTacToe
   def valid_move?(index)
     index.between?(0,9) && !position_taken?(index)
   end
-  def turn_count  
+  def turn_count
     @board.count do |item|
       item != " "
     end
+  end
+  def current_player
+    turn_count.even? ? "X" : "O"
   end
 
 end
