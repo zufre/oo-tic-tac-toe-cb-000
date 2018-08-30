@@ -43,4 +43,10 @@ class TicTacToe
     valid_move?(index) ? move(index, current_player)  : turn
     display_board
   end
+  def won?
+    WIN_COMBINATIONS.any? do |arr|
+      @board[arr[0]] == @board[arr[1]] &&
+      @board[arr[1]] == @board[arr[2]] &&
+      @board[arr[0]] != " " 
+  end
 end
