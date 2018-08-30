@@ -48,5 +48,6 @@ class TicTacToe
       @board[arr[0]] == @board[arr[1]] &&
       @board[arr[1]] == @board[arr[2]] &&
       @board[arr[0]] != " " 
+    end
   end
 end
