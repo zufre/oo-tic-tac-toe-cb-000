@@ -23,7 +23,7 @@ class TicTacToe
     @board[index] = token
   end
   def position_taken?(index)
-    @board[index] === " " ? false: true
+    @board[index] === " " ? false : true
   end
   def valid_move?(index)
     @board[index] >= 0 && @board[index] <= 9 && position_taken?(index) === false
