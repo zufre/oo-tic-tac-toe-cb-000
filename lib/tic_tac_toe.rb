@@ -51,9 +51,9 @@ class TicTacToe
     end
   end
   def full?
-    board.all? do |item| 
+    @board.all? do |item|
       item != " "
     end
   end
-  
+
 end
