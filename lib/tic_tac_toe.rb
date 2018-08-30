@@ -62,8 +62,8 @@ class TicTacToe
     draw? || won?
   end
   def winner
-    token = won?[0]
-    token == "X" ? "X" : "O"
+    
+    @board[won?[0]]
   end
 
 end
