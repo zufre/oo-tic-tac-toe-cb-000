@@ -28,4 +28,13 @@ class TicTacToe
   def valid_move?(index)
     index.between?(0,9) && !position_taken?(index)
   end
+  def turn_count 
+    count = 9
+    @board. do |item| 
+      if item == " "
+        count--
+      end
+    end
+  end
+  count
 end
